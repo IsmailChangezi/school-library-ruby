@@ -1,5 +1,5 @@
 class Person
-    def initialize(name = 'Unknown', age, parent_permission = true)
+    def initialize( age,name = "Unknown", parent_permission)
         @id = rand(1000)
         @name = name
         @age = age
@@ -21,5 +21,6 @@ class Person
         if(of_age? == true)
             return true
         end
+        false
     end
 end
